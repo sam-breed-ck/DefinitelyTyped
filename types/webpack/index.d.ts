@@ -591,6 +591,8 @@ declare namespace webpack {
             maxInitialRequests?: number;
             /** Give chunks created a name (chunks with equal name are merged) */
             name?: boolean | string | ((...args: any[]) => any);
+            /** specify the delimiter to use for the generated names */
+            automaticNameDelimiter?: string;
             /** Assign modules to a cache group (modules from different cache groups are tried to keep in separate chunks) */
             cacheGroups?: false | string | ((...args: any[]) => any) | RegExp | { [key: string]: CacheGroupsOptions };
         }
